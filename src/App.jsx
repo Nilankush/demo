@@ -8,6 +8,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   const name = import.meta.env.VITE_NAME;
+  const random = import.meta.env.VITE_RANDOM;
   return (
     <>
       <section id="center">
@@ -18,6 +19,7 @@ function App() {
         </div>
         <div>
           <h1>Get started</h1>
+          <div>{random}</div>
           <p>
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
