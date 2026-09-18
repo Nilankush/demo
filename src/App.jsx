@@ -7,6 +7,7 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
+  const name = import.meta.env.VITE_NAME;
   return (
     <>
       <section id="center">
@@ -26,7 +27,7 @@ function App() {
           className="counter"
           onClick={() => setCount((count) => count + 1)}
         >
-          Count is {count}
+          {name}Count is {count}
         </button>
       </section>
 
